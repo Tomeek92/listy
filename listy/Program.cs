@@ -1,5 +1,6 @@
-﻿using System.Windows.Markup;
-
+﻿using System.Security.Cryptography.X509Certificates;
+using System.Windows.Markup;
+/*
 class Egg
 {
     public void Main(string[] args)
@@ -27,3 +28,27 @@ class Egg
 
 
 }
+*/
+
+   public class TaskMenager
+{
+
+    
+
+
+      private  List<string> tasks = new List<string>();
+
+      public  void AddTask(string addTask)
+        {
+            tasks.Add(addTask);
+        }
+        public void RemoveTask(string removeTask)
+        {
+            tasks.Remove(removeTask);
+        }
+      public List<string> GetTask()
+        {
+            return tasks;
+        }
+    }
+         
